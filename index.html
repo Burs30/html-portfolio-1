@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+    <h1 id="title">Computer Studies Survey Form</h1>
+    <p id="description">Thankyou for taking this survey form</p>
+    <p>&copyBurs Garcia. (2024)</p>
+
+    <form id="survey-form" method="post">
+       
+<fieldset>
+         <label id="name-label">
+            First Name:
+            <input id="name" name="-first-name" type="text" placeholder="Enter your First Name" required/>
+         </label>
+
+         <label id="name-label">
+            Last Name:
+            <input id="name" name="last-name" type="text" placeholder="Enter your Last Name" required/>
+         </label>
+
+         <label id="number-label">
+            Age
+            <input id="number" name="age" type="number" min="16" max="50" placeholder="16"/>
+         </label>
+
+         <label id="email-label">
+            School Email:
+            <input id="email" name="school-email" type="email" placeholder="Enter your school email" required/>
+         </label>
+
+         <label for="year">
+            Year
+            <select id="year" name="year" required>
+                <option value="">(select)</option>
+                <option value="1st-year">1st Year</option>
+                <option value="2nd-year">2nd Year</option>
+                <option value="3rd-year">3rd Year</option>
+                <option value="4th-year">4th Year</option>
+            </select>
+         </label>
+
+         <label for="section"> 
+            Section
+            <select id="dropdown" name="section" required>
+                <option value="" >(select)</option>
+                <option value="dash-1">Dash 1</option>
+                <option value="dash-2">Dash 2</option>
+                <option value="dash-3">Dash 3</option>
+            </select>
+         </label>
+</fieldset>
+
+<fieldset>
+    <legend>Gender</legend>
+    <label for="male"> 
+        <input id="male" name="gender" value="male" type="radio" />
+    Male
+       </label>
+
+    <label for="irregular">
+        <input id="irregular" name="gender" type="radio" value="female" />
+    Female
+    </label>
+</fieldset>
+
+ <fieldset>
+        <legend>Student type(required)</legend>
+        <label for="regular"> 
+            <input id="regular" name="stdent-type" value="regular" type="radio" />
+        Regular
+           </label>
+
+        <label for="irregular">
+            <input id="irregular" name="stdent-type" type="radio" value="irregular" />
+        Irregular
+        </label>
+</fieldset>
+
+<fieldset>
+        <label>Would you recommend OLFU for Computer Studies?</label>
+
+        <label for="yes"><input id="yes" type="checkbox" value="yes" name="recommend"/>YES</label>
+        <label for="no"><input id="no" type="checkbox" value="no" name="recommend"/>NO</label>
+</fieldset>
+
+<fieldset>
+    <label for="suggestion">Any comments or suggestion about CSS teachers in FATIMA?
+        <textarea id="suggestion" value="suggestion" name="suggestion" rows="10" cols="50" placeholder="I love your idea share it..."></textarea> 
+    </label>  
+</fieldset>
+<input id="submit" type="submit" value="Submit" />
+    </form>
+</body>
+</html>
